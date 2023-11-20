@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ModuSolver</title>
+  <link rel="shortcut icon" href="imagenes/m.svg" type="image/x-icon">
+  <link rel="stylesheet" href="css/styleLogin.css">
+</head>
+
+<body>
+  <div class="content">
+    <div></div>
+    <img class="img" src="imagenes/imagen 4.jpg" alt="">
+    <div class="wrapper">
+      <div class="title-text">
+        <div class="title-login">Login Form/Signup Form</div>
+      </div>
+      <div class="form-container">
+        <div class="slide-controls">
+          <input type="radio" name="slide" id="login" checked>
+          <input type="radio" name="slide" id="signup">
+          <label for="login" class="slide login">Login</label>
+          <label for="signup" class="slide signup">Signup</label>
+          <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+          <form action="html/index.html" method="get" class="login" onsubmit="return loginUser()">
+            <div class="field">
+              <input type="text" id="loginEmail" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input type="password" id="loginPassword" placeholder="Password" required>
+            </div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">Not a member? <a href="#" onclick="showSignup()">Signup now</a></div>
+          </form>
+          <form action="#" class="signup" onsubmit="return signupUser()">
+            <div class="field">
+              <input type="text" id="signupEmail" placeholder="Email Address" required>
+            </div>
+            <div class="field">
+              <input type="password" id="signupPassword" placeholder="Password" required>
+            </div>
+            <div id="passwordError" class="error-message"></div>
+            <div class="field">
+              <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+              <div id="confirmPasswordError" class="error-message"></div>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <!-- partial -->
+      <script  src="js/script.js"></script>
+    
+    </body>
+
+</html>
+
