@@ -1,7 +1,7 @@
-body {
-    border: 1px solid #2011c3;
-  }
-  .title {
+body{
+ background-color: rgb(220, 207, 207);
+}
+.title {
       width: 100%;
       text-align: center;
       font-size: x-large;
@@ -94,4 +94,90 @@ body {
     left: 90%;
     background-color: #59b66d;
   }
-  
+
+.intruduccion{
+  margin: 20px;
+  background-color: #1c8bd5;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}  
+.contenedor{
+  margin: 2%;
+  border: 1px solid rgb(78, 76, 76);
+}
+.contenedor{
+  display: flex;
+ 
+}
+.principiante{
+  width: 33.33%;
+}
+.medio{
+  width: 33.33%;
+}
+.avanzado{
+  width: 33.33%;
+}
+.nivel{
+  border: 1px solid rgb(66, 65, 65);
+  text-align: center;
+}
+.header-ranking{
+  text-align: center;
+  display: flex;
+  border: 1px solid rgb(93, 92, 92);
+}
+.header-ranking div{
+  width: 33%;
+}
+
+.clasificado {
+  text-align: center;
+  display: flex;
+  border: 1px solid rgb(93, 92, 92);
+}
+.clasificado div{
+
+  width: 33%;
+}
+.footer {
+  width: 100%;
+  background-color: #2011c3;
+  display: flex;
+  border-radius: 5px;
+}
+.contenidos {
+  width: 25%;
+  text-align: center;
+}
+
+.contenidos img {
+  margin-top: 10%;
+  width: 50px;
+}
+.contenidos .titulo {
+  color: white;
+  font-size: x-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.contenidos p {
+  font-size: medium;
+  color: aliceblue;
+}
+.contenidos a {
+  height: 100%;
+  font-size: 15px;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.contenidos span {
+  margin: 10px;
+}
+
+
