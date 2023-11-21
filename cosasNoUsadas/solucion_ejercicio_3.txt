@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class HoraFutura {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese la hora actual (0-23): ");
+        int horaActual = scanner.nextInt();
+        System.out.print("Ingrese los minutos actuales (0-59): ");
+        int minutosActuales = scanner.nextInt();
+        System.out.print("Ingrese la duración en minutos: ");
+        int duracionMinutos = scanner.nextInt();
+
+        int minutosTotales = horaActual * 60 + minutosActuales + duracionMinutos;
+
+        int nuevaHora = (minutosTotales / 60) % 24;
+        int nuevosMinutos = minutosTotales % 60;
+
+        System.out.println("La hora futura será: " + nuevaHora + ":" + nuevosMinutos);
+    }
+}

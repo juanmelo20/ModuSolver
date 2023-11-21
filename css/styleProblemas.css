@@ -1,14 +1,13 @@
 body {
-    border: 1px solid #2011c3;
-  }
+  background-color: rgb(220, 207, 207);
+}
   .title {
       width: 100%;
       text-align: center;
       font-size: x-large;
-      background-color: rgb(220, 207, 207);
       color: #1c8bd5;
       font-family: fantasy;
-    
+      margin: 10px;
     }
   nav {
     position: relative;
@@ -94,4 +93,66 @@ body {
     left: 90%;
     background-color: #59b66d;
   }
+  .intruduccion{
+    margin: 20px;
+    background-color: #1c8bd5;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .contenedor{
+    margin: 20px;
+    border: 1px solid rgb(70, 69, 69);
+  }
+  .hijo1{
+    margin: 2%;
+    padding: 20px;
+    border: 1px solid rgb(70, 69, 69);
+  }
+ 
+ button a{
+    text-decoration: none;
+    font-family: fantasy;
+    color: black;
+  } 
+  .footer {
+    width: 100%;
+    background-color: #2011c3;
+    display: flex;
+    border-radius: 5px;
+  }
+  .contenidos {
+    width: 25%;
+    text-align: center;
+  }
+  
+  .contenidos img {
+    margin-top: 10%;
+    width: 50px;
+  }
+  .contenidos .titulo {
+    color: white;
+    font-size: x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .contenidos p {
+    font-size: medium;
+    color: aliceblue;
+  }
+  .contenidos a {
+    height: 100%;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .contenidos span {
+    margin: 10px;
+  }
+  
+  
   

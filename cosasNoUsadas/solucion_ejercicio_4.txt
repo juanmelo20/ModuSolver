@@ -1,0 +1,35 @@
+import java.math.BigInteger;
+
+public class ExponenciacionRapidaModular {
+
+    // Función para calcular a^b mod m utilizando exponenciación rápida modular
+    private static BigInteger expModular(BigInteger a, BigInteger b, BigInteger m) {
+        if (b.equals(BigInteger.ZERO)) {
+            return BigInteger.ONE;
+        }
+
+        BigInteger result;
+        if (b.mod(BigInteger.TWO).equals(BigInteger.ZERO)) {
+            // Si b es par
+            BigInteger halfExp = expModular(a, b.divide(BigInteger.TWO), m);
+            result = halfExp.multiply(halfExp).mod(m);
+        } else {
+            // Si b es impar
+            BigInteger halfExp = expModular(a, b.subtract(BigInteger.ONE).divide(BigInteger.TWO), m);
+            result = a.multiply(halfExp).multiply(halfExp).mod(m);
+        }
+
+        return result;
+    }
+
+    public static void main(String[] args) {
+        // Ejemplo: Calcular 3^13 mod 7
+        BigInteger base = new BigInteger("3");
+        BigInteger exponente = new BigInteger("13");
+        BigInteger modulo = new BigInteger("7");
+
+        BigInteger resultado = expModular(base, exponente, modulo);
+
+        System.out.println(base + "^" + exponente + " mod " + modulo + " = " + resultado);
+    }
+}

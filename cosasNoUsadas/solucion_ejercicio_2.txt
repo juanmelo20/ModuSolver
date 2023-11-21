@@ -1,0 +1,26 @@
+public class CifradoCesar {
+    public static String cifrarCesar(String mensaje, int clave) {
+        StringBuilder resultado = new StringBuilder();
+
+        for (char caracter : mensaje.toCharArray()) {
+            if (Character.isLetter(caracter)) {
+                char inicio = Character.isUpperCase(caracter) ? 'A' : 'a';
+                resultado.append((char) ((caracter - inicio + clave) % 26 + inicio));
+            } else {
+                resultado.append(caracter);
+            }
+        }
+
+        return resultado.toString();
+    }
+
+    public static void main(String[] args) {
+        String mensaje = "Hola, mundo!";
+        int clave = 3;
+
+        String mensajeCifrado = cifrarCesar(mensaje, clave);
+
+        System.out.println("Mensaje Original: " + mensaje);
+        System.out.println("Mensaje Cifrado: " + mensajeCifrado);
+    }
+}

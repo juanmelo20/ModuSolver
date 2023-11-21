@@ -1,0 +1,30 @@
+
+import java.math.BigInteger;
+
+public class CongruenciaLineal {
+
+    // Función para encontrar el inverso modular de 'a' en m
+    private static BigInteger findModInverse(BigInteger a, BigInteger m) {
+        return a.modInverse(m);
+    }
+
+    // Función para resolver la congruencia lineal ax ≡ b (mod m)
+    private static BigInteger solveCongruence(BigInteger a, BigInteger b, BigInteger m) {
+        // Encuentra el inverso modular de 'a' en 'm'
+        BigInteger aInverse = findModInverse(a, m);
+
+        // Encuentra la solución x: x ≡ a^(-1) * b (mod m)
+        return aInverse.multiply(b).mod(m);
+    }
+
+    public static void main(String[] args) {
+        // Ejemplo: Resuelve 2x ≡ 1 (mod 5)
+        BigInteger a = new BigInteger("2");
+        BigInteger b = new BigInteger("1");
+        BigInteger m = new BigInteger("5");
+
+        BigInteger solution = solveCongruence(a, b, m);
+
+        System.out.println("La solución para " + a + "x ≡ " + b + " (mod " + m + ") es x ≡ " + solution + " (mod " + m + ")");
+    }
+}
