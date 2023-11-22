@@ -35,7 +35,7 @@ nav .animation {
   height: 100%;
   top: 0;
   z-index: 0;
-  transition: all 0.5s ease 0s;
+  transition: all 0.3s ease 0s;
   border-radius: 8px;
 }
 
