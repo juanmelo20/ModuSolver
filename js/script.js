@@ -1,3 +1,4 @@
+
 const users = JSON.parse(localStorage.getItem('users')) || [];
 const loginText = document.querySelector(".title-text .login");
 const loginForm = document.querySelector("form.login");
@@ -51,7 +52,6 @@ function loginUser() {
 
   if (user) {
     alert('inicio de seccion exitoso!!!');
-    
     return true;
   } else {
     alert('Usuario no encontrado');

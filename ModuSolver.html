@@ -6,6 +6,7 @@
   <title>ModuSolver</title>
   <link rel="shortcut icon" href="imagenes/m.svg" type="image/x-icon">
   <link rel="stylesheet" href="css/styleLogin.css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 
 <body>
@@ -27,10 +28,11 @@
         <div class="form-inner">
           <form action="html/index.html" method="get" class="login" onsubmit="return loginUser()">
             <div class="field">
-              <input type="text" id="loginEmail" placeholder="Email Address" required>
+              <input type="text" id="loginEmail" placeholder="User name" required>
             </div>
             <div class="field">
               <input type="password" id="loginPassword" placeholder="Password" required>
+              <div id="PasswordError" class="error-message"></div>
             </div>
             <div class="pass-link"><a href="#">Forgot password?</a></div>
             <div class="field btn">
@@ -41,7 +43,7 @@
           </form>
           <form action="#" class="signup" onsubmit="return signupUser()">
             <div class="field">
-              <input type="text" id="signupEmail" placeholder="Email Address" required>
+              <input type="text" id="signupEmail" placeholder="User name" required>
             </div>
             <div class="field">
               <input type="password" id="signupPassword" placeholder="Password" required>
@@ -63,6 +65,7 @@
     
     <!-- partial -->
       <script  src="js/script.js"></script>
+      <script src="sweetalert2.all.min.js"></script>
     
     </body>
 
